@@ -140,6 +140,16 @@
               <td>Build</td>
               <td>Docker {{ image.DockerVersion }} on {{ image.Os }}, {{ image.Architecture }}</td>
             </tr>
+            <tr ng-if="image.RepoDigests.length > 0">
+              <td>Digests</td>
+              <td>
+                <table class="table-bordered table-condensed table">
+                  <tr ng-repeat="digest in image.RepoDigests">
+                    <td>{{ digest }}</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
             <tr ng-if="!(image.Labels | emptyobject)">
               <td>Labels</td>
               <td>

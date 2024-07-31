@@ -6,6 +6,7 @@ export function ImageDetailsViewModel(data) {
   this.Created = data.Created;
   this.Checked = false;
   this.RepoTags = data.RepoTags;
+  this.RepoDigests = data.RepoDigests;
   this.Size = data.Size;
   this.DockerVersion = data.DockerVersion;
   this.Os = data.Os;
