@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TAG=2.20.3-patch.1
+TAG=2.20.3-patch.2
 
 docker push lonwern/portainer-ce:$TAG
 docker push lonwern/portainer-ce:sts
