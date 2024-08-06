@@ -203,7 +203,7 @@ type upOptions struct {
 }
 
 func newUpCommand(filePaths []string, options upOptions) composeCommand {
-	args := []string{"up"}
+	args := []string{"up", "--remove-orphans"}
 
 	if options.abortOnContainerExit {
 		args = append(args, "--abort-on-container-exit")
